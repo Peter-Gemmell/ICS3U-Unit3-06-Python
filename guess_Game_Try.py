@@ -2,14 +2,14 @@
 
 # Created by Peter Gemmell
 # Created on March 2022
-# This program calculates the circumference of a circle using constants
+# This program is a guessing game with try & catch
 
 
 import random
 
 
 def main():
-    # this function is the game
+    # this function is a guessing game with try & catch
 
     # input
     guessed_number_string = input("Guess a number between 0-9: ")
@@ -17,16 +17,16 @@ def main():
 
     # process & output
     try:
-        guessed_Number = int(guessed_number_as_string)
+        guessed_Number = int(guessed_number_string)
 
         if guessed_Number == mystery_Number:
-            print("You guessed correctly!")
+            print("\nYou guessed correctly!")
         else:
             print("You guessed incorrectly. Try again.")
-            print("\nThe correct answer was {0}.".format(some_variable))
+            print("\nThe correct answer was {0}.".format(mystery_Number))
 
     except Exception:
-        print("Invalid number guessed, please try again.")
+        print("\nInvalid number, please try again.")
     print("\nDone.")
 
 
